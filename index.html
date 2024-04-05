@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/dejesusbg5/md3@latest/styles/components.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/dejesusbg5/md3@main/styles/styles.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <dialog id="dialog" class="md3-dialog">
+      <span class="md3-dialog__text" id="msg"></span>
+      <button
+        type="button"
+        class="md3-btn md3-btn--text md3-dialog__btn"
+        onclick="closeDialog()"
+      >
+        <span class="md3-btn__text">Aceptar</span>
+      </button>
+    </dialog>
+    <main>
+      <h1>Picas y Fijas</h1>
+      <form action="#" onsubmit="validate()">
+        <input
+          type="text"
+          placeholder="Ingrese un número"
+          id="guess"
+          class="md3-input--text"
+        />
+        <button class="md3-btn md3-btn--filled" type="submit">
+          <span class="md3-btn__text">Validar</span>
+        </button>
+      </form>
+
+      <table id="attempts" class="md3-table">
+        <thead>
+          <th>#</th>
+          <th>Intento</th>
+          <th>Picas</th>
+          <th>Fijas</th>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </main>
+    <!-- Material Design -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.4.2/chroma.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vibrant.js/1.0.0/Vibrant.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/dejesusbg5/md3@main/script/monet.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/dejesusbg5/md3@main/script/material-you.js"></script>
+    <!-- ACME -->
+    <script src="./app.js"></script>
+  </body>
+</html>
